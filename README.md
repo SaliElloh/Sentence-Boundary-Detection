@@ -21,11 +21,11 @@ The program employs a series of data preprocessing steps and the Decision Tree C
 Data preprocessing via Test_Preprocess.py and Train_Preprocess.py to remove extraneous characters and labels.
 Training and testing using the Decision Tree Classifier (SBD.py) with varying feature combinations. These features include:
 
-   1 Int(log(count(R, is lower))):
+   1. Int(log(count(R, is lower))):
    feature essentially calculates the logarithm of the count of lowercase characters (spaces) for the word on the right.
    2. left_context.count('.'):
    This feature counts the number of times the period occurs in the left word.
-    3. count(period, R):
+   3. count(period, R):
    This feature counts the occurrences of periods in the right word.
    4.  Word to the left of “.” (L):
    Captures the preceding word before the period to understand its context.
