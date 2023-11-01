@@ -19,6 +19,7 @@ Period after "store" classified as "End of Sentence"
 The program employs a series of data preprocessing steps and the Decision Tree Classifier to achieve Sentence Boundary Detection. Key components of the pseudocode include:
 
 Data preprocessing via Test_Preprocess.py and Train_Preprocess.py to remove extraneous characters and labels.
+
 Training and testing using the Decision Tree Classifier (SBD.py) with varying feature combinations. These features include:
    1. Int(log(count(R, is lower))):
    feature essentially calculates the logarithm of the count of lowercase characters (spaces) for the word on the right.
